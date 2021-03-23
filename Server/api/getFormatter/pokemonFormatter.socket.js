@@ -1,4 +1,4 @@
-const pokemonDB = require("../db/models/pokemon.database");
+const pokemonDB = require("../models/pokemon.database");
 const movementFormatter = require("../getFormatter/movementsFormatter.socket");
 function getPokemons(){
     var pokemons = []

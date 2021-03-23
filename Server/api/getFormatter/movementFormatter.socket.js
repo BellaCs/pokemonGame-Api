@@ -1,4 +1,4 @@
-const movementDB = require("../db/models/movement.database");
+const movementDB = require("../models/movement.database");
 
 function getMovement(movement_id){
     var movement;

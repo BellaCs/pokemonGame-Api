@@ -1,4 +1,4 @@
-const mariadb = require('../config/db.js');
+const mariadb = require('../../config/db.js');
 var exports;
 
 
