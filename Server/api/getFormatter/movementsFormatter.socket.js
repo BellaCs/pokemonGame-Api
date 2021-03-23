@@ -4,7 +4,7 @@ var exports;
 exports.getMovements = (pokemon_id) => {
     var movements = [];
         movementsDB.Movements(pokemon_id,(error, result) =>{
-            if(error!= null){
+            if(error == null){
                 result.forEach(element => {
                     movements.push(getMovement(element));
                 });
