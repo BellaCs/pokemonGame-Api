@@ -8,7 +8,6 @@ exports.create_player = function(req, res){
             let playerId = {
                 "playerId" : result
             }
-            res.setHeader("Access-Control-Allow-Origin", "*");
             res.json(playerId);
         } else {
             res.sendStatus(404);
