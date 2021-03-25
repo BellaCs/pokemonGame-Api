@@ -8,7 +8,6 @@ exports.create_game = (req, res) => {
             let gameId = {
                 "gameId" : result
             }
-            res.setHeader("Access-Control-Allow-Origin", "*");
             res.json(gameId);
         } else {
             res.sendStatus(404);
