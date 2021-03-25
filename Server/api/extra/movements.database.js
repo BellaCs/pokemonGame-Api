@@ -2,7 +2,7 @@ const mariadb = require('../config/db.js');
 var exports;
 
 
-exports.Movements = (PokemonID, result) => {
+exports.movmentsByPokemonId = (PokemonID, result) => {
         mariadb.query("SELECT movement_id FROM pokemon_movement WHERE pokemon_id = " + PokemonID + " LIMIT 4", (err, res) => {
                 if (err) {
                         console.log("error: ", err);

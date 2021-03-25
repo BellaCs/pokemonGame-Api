@@ -67,12 +67,12 @@ function getDOMElements() {
 }
 
 function loadPokemonToVar() {
-    pokemon1 = JSON.parse(pokemons[0]);
-    pokemon2 = JSON.parse(pokemons[1]);
-    pokemon3 = JSON.parse(pokemons[2]);
-    pokemon4 = JSON.parse(pokemons[3]);
-    pokemon5 = JSON.parse(pokemons[4]);
-    pokemon6 = JSON.parse(pokemons[5]);
+    pokemon1 = pokemons[0];
+    pokemon2 = pokemons[1];
+    pokemon3 = pokemons[2];
+    pokemon4 = pokemons[3];
+    pokemon5 = pokemons[4];
+    pokemon6 = pokemons[5];
 }
 
 function mostrarPokemons() {
@@ -226,6 +226,7 @@ function setPokemonDetails(pokemonToDisplay, pokeSelectId) {
     habilitat2 = pokemonToDisplay.atacs[1];
     habilitat3 = pokemonToDisplay.atacs[2];
     habilitat4 = pokemonToDisplay.atacs[3];
+
     DOMhabilitat1.textContent = habilitat1.movement_name + " \n " + habilitat1.movement_pp + " / " + JSON.parse(pokemons[pokeSelectId - 1]).atacs[0].movement_pp;
     DOMhabilitat2.textContent = habilitat2.movement_name + " \n " + habilitat2.movement_pp + " / " + JSON.parse(pokemons[pokeSelectId - 1]).atacs[1].movement_pp;
     DOMhabilitat3.textContent = habilitat3.movement_name + " \n " + habilitat3.movement_pp + " / " + JSON.parse(pokemons[pokeSelectId - 1]).atacs[2].movement_pp;

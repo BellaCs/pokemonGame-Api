@@ -5,14 +5,11 @@ const socket = io("ws://172.24.19.11:3500");
 
 var partidaId,userId;
 
-export function connectToSocket(){
-    socket.connect();
-}
-
+socket.connect();
 
 socket.on('connect', function () {
 
-    socket.emit("attackEvent", ataque, function(daño_final, si){
+    socket.emit("attackEvent", function(daño_final, si){
         console.log(daño_final);
     });
 
